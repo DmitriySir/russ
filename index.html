@@ -18,15 +18,16 @@
           <div class="menu">
             <img class="menu__img" src="./img/burger.svg" />
             <ul class="menu__list">
-              <li class="menu__item">О Компании</li>
-              <li class="menu__item">Направления деятельности</li>
-              <li class="menu__item">Контакты</li>
+              <li class="menu__item" onclick="toggleAbout()">О Компании</li>
+              <li class="menu__item" onclick="toggleServices()">
+                Направления деятельности
+              </li>
+              <li class="menu__item" onclick="toggleContact()">Контакты</li>
             </ul>
           </div>
           <div class="tel__wrapper">
             <a class="tel" href="tel:+7 965 192-10-55"></a>
           </div>
-          <div class="starInvest">Начать инвестирование</div>
         </section>
       </header>
 
@@ -34,8 +35,76 @@
         <div class="main__wrapper-bird">
           <img class="main__wrapper-img" src="./img/ras.jpg" />
         </div>
-        <div class="main__wrapper-bird">Основной контент</div>
+        <!-- Список о компании -->
+        <div class="about-company" id="aboutCompany" style="display: none">
+          <p>Информация о компании...</p>
+        </div>
+        <!-- Список услуг -->
+        <div class="services-list" id="servicesList">
+          <ul>
+            <li>Срочный выкуп недвижимости</li>
+            <li>
+              Продажа, аренда объектов коммерческой, жилой и загородной
+              недвижимости
+            </li>
+            <li>
+              Подбор на покупку, аренду объектов коммерческой, жилой и
+              загородной недвижимости
+            </li>
+            <li>Оценка объектов недвижимости и бизнеса</li>
+            <li>Продажа и подбор для покупки инвестиционных проектов</li>
+            <li>Юридическое сопровождение сделок</li>
+            <li>
+              Согласование перепланировок и переустройств в объектах
+              недвижимости
+            </li>
+            <li>
+              Смена назначений жилых/нежилых помещений и земельных участков,
+              межевание и иные виды кадастровых работ
+            </li>
+            <li>
+              Консалтинговые услуги для бизнеса по управлению недвижимым
+              имуществом
+            </li>
+            <li>Представление интересов в судах</li>
+            <li>Банкротство юридических и физических лиц</li>
+          </ul>
+        </div>
+        <!-- Список контактов -->
+        <div class="contact" id="contact" style="display: none">
+          <p>Телефон: <a href="tel:+7 965 192-10-55">+7 965 192-10-55</a></p>
+          <p>
+            e-mail:
+            <a href="mailto:karaev@anyconsalt.ru">karaev@anyconsalt.ru</a>
+            <br />
+            <a href="mailto:info@anyconsalt.ru">info@anyconsalt.ru</a>
+          </p>
+          <div class="adress">
+            <div class="address__item">
+              Адрес в Москве: ул. Тверская, д. 18, корп. 1
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A32331af1fc18a28f7512223b138a17d7a5e1dba5d38cd2da4c75d969b5f420e8&amp;source=constructor"
+                width="400"
+                height="300"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <div class="address__item">
+              Адрес в Стамбуле: Güzelyurt, 2108 Sk No:29 D:23, 34515
+              Esenyurt/İstanbul
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A32331af1fc18a28f7512223b138a17d7a5e1dba5d38cd2da4c75d969b5f420e8&amp;source=constructor"
+                width="400"
+                height="300"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
+
+    <!-- Подключение файла script.js -->
+    <script src="script.js"></script>
   </body>
 </html>

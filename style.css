@@ -91,9 +91,7 @@ li {
     object-fit: contain;
 }
 
-.starInvest {
-    display: none;
-}
+
 
 .menu__list {
     display: none;
@@ -105,48 +103,7 @@ li {
     }
 }
 
-@media(min-width: 650px) {
-
-    .starInvest {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-shrink: 1;
-        padding: 10px;
-        box-sizing: border-box;
-        overflow: hidden;
-        color: white;
-        background-color: #007bff;
-        transition: color 0.3s;
-    }
-
-    .starInvest::before {
-        content: 'Начать инвестирование';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: red;
-        transition: left 0.3s;
-        padding-top: 30px;
-    }
-
-    .starInvest:hover::before {
-        left: 0;
-    }
-
-    .starInvest:hover {
-        color: white;
-    }
-
-    .starInvest:hover::before {
-        background-color: red;
-
-    }
-}
+@media(min-width: 650px) {}
 
 @media(min-width: 1100px) {
     .wrapper {
@@ -156,6 +113,7 @@ li {
     .header_wrapper {
         display: flex;
         flex-direction: column;
+        height: 100vh;
     }
 
     .main__wrapper {
@@ -171,45 +129,19 @@ li {
         height: 100%;
     }
 
-
-    .starInvest {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-shrink: 1;
-        padding: 10px;
-        box-sizing: border-box;
-        overflow: hidden;
-        color: white;
-        background-color: #007bff;
-        transition: color 0.3s;
+    .aboutCompany {
+        display: none;
+        margin-top: 10px;
     }
 
-    .starInvest::before {
-        content: 'Начать инвестирование';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: red;
-        transition: left 0.3s;
-        padding-top: 10px;
+    .contact {
+        display: none;
+        margin-top: 10px;
     }
 
-    .starInvest:hover::before {
-        left: 0;
-    }
-
-    .starInvest:hover {
-        color: white;
-    }
-
-    .starInvest:hover::before {
-        background-color: red;
-
+    .services-list {
+        display: none;
+        margin-top: 10px;
     }
 
     .menu {
@@ -228,9 +160,20 @@ li {
 
     .menu__item {
         padding: 10px;
+        cursor: pointer;
     }
 
     .tel__wrapper {
         display: none;
+    }
+
+    .adress {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .address__item {
+        display: flex;
+        flex-direction: column;
     }
 }
