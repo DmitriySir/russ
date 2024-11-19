@@ -8,6 +8,9 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Сайт Расула</title>
   </head>
   <body>
@@ -22,6 +25,10 @@
               <li class="menu__item" onclick="toggleServices()">
                 Направления деятельности
               </li>
+              <li class="menu__item" onclick="toggleCommands()">
+                Наша команда
+              </li>
+
               <li class="menu__item" onclick="toggleContact()">Контакты</li>
             </ul>
           </div>
@@ -36,8 +43,17 @@
           <img class="main__wrapper-img" src="./img/ras.jpg" />
         </div>
         <!-- Список о компании -->
-        <div class="about-company" id="aboutCompany" style="display: none">
-          <p>Информация о компании...</p>
+        <div class="command-list" id="aboutCompany">
+          <h1>Недвижимость -  наше призвание, стиль жизни и образ мышления</h1>
+          <p>
+            7 лет работы (Компания Any Consalt работает на рынке межрегиональном рынке недвижимости с 2018 года)</p>
+            <ul>
+              <li>Индивидуальный подход</li>
+              <li>Нацеленность на результат</li>
+              <li>Надежность</li>
+              <li>Экспертность</li>
+              <li>Открытость</li>
+            </ul>
         </div>
         <!-- Список услуг -->
         <div class="services-list" id="servicesList">
@@ -71,6 +87,10 @@
           </ul>
         </div>
         <!-- Список контактов -->
+        <div class="about-company" id="command" style="display: none">
+          <p>Наша команда</p>
+        </div>
+        <!-- Список контактов -->
         <div class="contact" id="contact" style="display: none">
           <p>Телефон: <a href="tel:+7 965 192-10-55">+7 965 192-10-55</a></p>
           <p>
@@ -83,9 +103,9 @@
             <div class="address__item">
               Адрес в Москве: ул. Тверская, д. 18, корп. 1
               <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A32331af1fc18a28f7512223b138a17d7a5e1dba5d38cd2da4c75d969b5f420e8&amp;source=constructor"
-                width="400"
-                height="300"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aec3da6f76e4dbb76cf8c273e60e029f5c10a64d7697b0c38136ebaa73ad13aa7&amp;source=constructor"
+                width="300"
+                height="250"
                 frameborder="0"
               ></iframe>
             </div>
@@ -94,14 +114,26 @@
               Esenyurt/İstanbul
               <iframe
                 src="https://yandex.ru/map-widget/v1/?um=constructor%3A32331af1fc18a28f7512223b138a17d7a5e1dba5d38cd2da4c75d969b5f420e8&amp;source=constructor"
-                width="400"
-                height="300"
+                width="300"
+                height="250"
                 frameborder="0"
               ></iframe>
             </div>
           </div>
         </div>
       </main>
+      <div class="answer">
+        <div class="answer__content">
+          <p>Ответим на любой вопрос</p>
+          <div class="answer__anchor">
+          <a href="https://api.whatsapp.com/send?phone=79651921055" target="_blank" rel="noopener noreferrer">
+            <img src="./img/whatsapp-svgrepo-com.svg" alt="Связаться через WhatsApp" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=79651921055" target="_blank" rel="noopener noreferrer">
+            <img src="./img/telegram-svgrepo-com.svg" alt="Связаться через Telegram" />
+          </a>
+          </div>
+      </div>
     </div>
 
     <!-- Подключение файла script.js -->
